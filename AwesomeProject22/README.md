@@ -45,3 +45,69 @@ yarn ios
 ## note
 
 everthing in react native is wrapped inside a view
+
+## css flex
+
+```
+ container: {
+    flex: 1,
+    flexDirection: 'row',
+    padding: 8,
+  },
+  card: {
+    flex: 1,
+
+    justifyContent: 'center',
+    alignItems: 'center',
+    width: 100,
+    height: 100,
+    borderRadius: 4,
+    margin: 8,
+  },
+```
+
+![Alt text](image.png)
+
+## ScrollView
+
+A ScrollView is a view that contains multiple child views, and allows the user to scroll through the views. This is useful when your views don't fit within the boundaries of the screen.
+
+Some key things to note about ScrollView:
+
+It renders all its child views at once, so performance can be an issue with a large number of child views.
+
+For long lists of items, use FlatList instead of ScrollView. FlatList renders items lazily as the user scrolls.
+
+ScrollView works best for a small number of child views that have a limited size.
+
+It supports both vertical and horizontal scrolling by setting the horizontal prop.
+
+You can enable paging through child views using the pagingEnabled prop.
+
+```
+ <ScrollView>
+    {/* child views */}
+  </ScrollView>
+
+
+
+```
+
+can pass props also like this
+
+```
+   <ScrollView
+    contentContainerStyle={styles.contentContainer}
+    showsVerticalScrollIndicator
+    scrollEventThrottle={16}
+  >
+  </ScrollView>
+```
+
+### Some important props are:
+
+contentContainerStyle: Styles applied to the scroll view content container.
+
+showsVerticalScrollIndicator: Shows a vertical scroll indicator.
+
+scrollEventThrottle: Controls how often the scroll event is fired.

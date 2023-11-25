@@ -1,6 +1,7 @@
 import {SafeAreaView, ScrollView, StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 import FlatCards from './Components/FlatCards';
+import ElevatedCards from './Components/ElevatedCards';
 
 const App = () => {
   return (
@@ -9,6 +10,8 @@ const App = () => {
         <ScrollView>
           {/* <Text style={styles.heading}>App</Text> */}
           <FlatCards />
+
+          <ElevatedCards />
         </ScrollView>
       </SafeAreaView>
     </View>
