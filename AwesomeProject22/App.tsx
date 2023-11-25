@@ -1,10 +1,16 @@
-import {StyleSheet, Text, View} from 'react-native';
+import {SafeAreaView, ScrollView, StyleSheet, Text, View} from 'react-native';
 import React from 'react';
+import FlatCards from './Components/FlatCards';
 
 const App = () => {
   return (
     <View>
-      <Text style={styles.heading}>App</Text>
+      <SafeAreaView>
+        <ScrollView>
+          {/* <Text style={styles.heading}>App</Text> */}
+          <FlatCards />
+        </ScrollView>
+      </SafeAreaView>
     </View>
   );
 };
