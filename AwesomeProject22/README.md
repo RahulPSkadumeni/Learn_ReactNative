@@ -111,3 +111,16 @@ contentContainerStyle: Styles applied to the scroll view content container.
 showsVerticalScrollIndicator: Shows a vertical scroll indicator.
 
 scrollEventThrottle: Controls how often the scroll event is fired.
+
+## Handling Images
+
+```
+<Image
+      source={{
+           uri: 'https://reactnative.dev/docs/assets/p_cat2.png',
+         }}
+         style={{width: 200, height: 200}}
+ />
+
+
+```
