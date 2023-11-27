@@ -16,9 +16,10 @@ const FancyCard = () => {
         <View style={styles.cardBody}>
           <Text style={styles.cardTitle}>Houseboat backwaters</Text>
           <Text style={styles.cardLabel}>Alleppey, Kerala</Text>
-          <Text style={styles.cardDescription}>
+          <Text numberOfLines={3} style={styles.cardDescription}>
             Don’t miss out on the experience of sailing in a houseboat in
             Alleppey that happens to be one of the best things to do in Kerala
+            for couples.It happens to be one of the best things to do in Kerala
             for couples.
           </Text>
           <Text style={styles.cardFooter}>12 mins away</Text>
